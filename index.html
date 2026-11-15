@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokenWise AI</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+
+<header class="top">
+    <div class="brand">✦ TokenWise <b>AI</b></div>
+    <span class="tag">INTELLIGENT CODING AGENT</span>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="eyebrow">AI AGENTS & INTELLIGENT SYSTEMS</div>
+
+    <h1>
+        Build smarter.<br>
+        <span>Spend fewer tokens.</span>
+    </h1>
+
+    <p>
+        An intelligent coding agent that reduces unnecessary
+        prompt context and makes token usage visible.
+    </p>
+</section>
+
+<section class="workspace">
+
+    <div class="panel">
+        <div class="panel-head">
+            <h2>New coding task</h2>
+            <span class="live-dot">● READY</span>
+        </div>
+
+        <label>Programming language</label>
+
+        <select id="language">
+            <option>Java</option>
+            <option>Python</option>
+        </select>
+
+        <label>Describe your coding task</label>
+
+        <textarea id="task"
+            placeholder="Example: Write a program to check whether a number is prime.">
+        </textarea>
+
+        <button id="run">
+            Generate optimized code →
+        </button>
+
+        <p class="hint">
+            Describe your coding problem clearly.
+        </p>
+
+        <div id="error" class="error"></div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-head">
+            <h2>Agent output</h2>
+            <span id="mode" class="mode">WAITING</span>
+        </div>
+
+        <pre><code id="code">Your code will appear here...</code></pre>
+
+        <button class="copy" id="copy">Copy code</button>
+    </div>
+
+</section>
+
+<section class="metrics">
+
+    <div class="metric">
+        <span>Baseline prompt</span>
+        <strong id="baseline">—</strong>
+        <small>Estimated tokens</small>
+    </div>
+
+    <div class="metric">
+        <span>Optimized prompt</span>
+        <strong id="optimized">—</strong>
+        <small>Estimated tokens</small>
+    </div>
+
+    <div class="metric">
+        <span>Tokens saved</span>
+        <strong id="saved" class="green">—</strong>
+        <small id="percent">Prompt reduction</small>
+    </div>
+
+    <div class="metric">
+        <span>Total estimate</span>
+        <strong id="used">—</strong>
+        <small>Prompt + output</small>
+    </div>
+
+</section>
+
+<p class="disclaimer" id="note">
+    Token usage is estimated locally.
+</p>
+
+<footer>
+    TokenWise AI | Team Codex AI
+    <br>
+    Shriyanshi Sharma & Shivani Vyas
+</footer>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
